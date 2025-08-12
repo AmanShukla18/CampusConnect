@@ -1,0 +1,90 @@
+import { Link } from 'expo-router';
+import { useState } from 'react';
+import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { FormTextInput } from '@/components/auth/FormTextInput';
+import { LoginIllustration } from '@/components/auth/LoginIllustration';
+import { PrimaryButton } from '@/components/auth/PrimaryButton';
+import { Theme } from '@/constants/theme';
+
+export default function ResetScreen() {
+  const [email, setEmail] = useState('');
+
+  return (
+    <KeyboardAvoidingView
+      style={{ flex: 1 }}
+      behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+    >
+      <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
+        <Text style={styles.pageTitle}>Reset Password</Text>
+        <LoginIllustration />
+
+        <Text style={styles.sectionTitle}>Forgot your password?</Text>
+        <Text style={styles.description}>
+          Enter your email address and we'll send you a link to reset your password.
+        </Text>
+
+        <View style={styles.gap20} />
+        <FormTextInput
+          value={email}
+          onChangeText={setEmail}
+          autoCapitalize="none"
+          keyboardType="email-address"
+          placeholder="Email or Student ID"
+          returnKeyType="done"
+        />
+
+        <View style={styles.gap24} />
+        <PrimaryButton title="Send Reset Link" onPress={() => {}} />
+
+        <View style={styles.footerRow}>
+          <Text style={styles.footerText}>Remember your password? </Text>
+          <Link href="/(auth)/login" style={styles.link}>Login</Link>
+        </View>
+      </ScrollView>
+    </KeyboardAvoidingView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flexGrow: 1,
+    backgroundColor: Theme.colors.background,
+    paddingHorizontal: 20,
+    paddingTop: 24,
+    paddingBottom: 32,
+  },
+  pageTitle: {
+    fontSize: 24,
+    fontWeight: '700',
+    color: Theme.colors.textPrimary,
+    textAlign: 'center',
+  },
+  sectionTitle: {
+    marginTop: 16,
+    fontSize: 22,
+    fontWeight: '700',
+    color: Theme.colors.textPrimary,
+  },
+  description: {
+    marginTop: 8,
+    fontSize: 16,
+    color: Theme.colors.textSecondary,
+    lineHeight: 24,
+  },
+  link: {
+    color: Theme.colors.link,
+    fontSize: 14,
+    fontWeight: '600',
+  },
+  gap16: { height: 16 },
+  gap20: { height: 20 },
+  gap24: { height: 24 },
+  footerRow: {
+    marginTop: 20,
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  footerText: {
+    color: Theme.colors.textSecondary,
+  },
+});

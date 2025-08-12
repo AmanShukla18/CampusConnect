@@ -1,0 +1,105 @@
+<svg width="300" height="160" viewBox="0 0 300 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky -->
+  <rect width="300" height="160" fill="#E8F4FD"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="80" cy="30" rx="18" ry="10" fill="white" opacity="0.9"/>
+  <ellipse cx="95" cy="30" rx="15" ry="8" fill="white" opacity="0.9"/>
+  <ellipse cx="70" cy="30" rx="10" ry="6" fill="white" opacity="0.9"/>
+  
+  <ellipse cx="220" cy="25" rx="16" ry="9" fill="white" opacity="0.9"/>
+  <ellipse cx="235" cy="25" rx="12" ry="7" fill="white" opacity="0.9"/>
+  <ellipse cx="210" cy="25" rx="8" ry="5" fill="white" opacity="0.9"/>
+  
+  <!-- Trees - More detailed and varied -->
+  <ellipse cx="40" cy="140" rx="28" ry="38" fill="#4CAF50"/>
+  <ellipse cx="35" cy="135" rx="22" ry="32" fill="#66BB6A"/>
+  <ellipse cx="45" cy="130" rx="18" ry="28" fill="#81C784"/>
+  <ellipse cx="38" cy="125" rx="12" ry="20" fill="#A5D6A7"/>
+  
+  <ellipse cx="260" cy="145" rx="32" ry="42" fill="#4CAF50"/>
+  <ellipse cx="255" cy="140" rx="26" ry="36" fill="#66BB6A"/>
+  <ellipse cx="265" cy="135" rx="22" ry="32" fill="#81C784"/>
+  <ellipse cx="258" cy="130" rx="16" ry="24" fill="#A5D6A7"/>
+  
+  <ellipse cx="280" cy="150" rx="24" ry="32" fill="#4CAF50"/>
+  <ellipse cx="275" cy="145" rx="18" ry="26" fill="#66BB6A"/>
+  <ellipse cx="285" cy="140" rx="14" ry="20" fill="#81C784"/>
+  
+  <!-- Ground/Grass -->
+  <rect x="0" y="150" width="300" height="10" fill="#8BC34A"/>
+  
+  <!-- University Building - More detailed classical architecture -->
+  <rect x="100" y="80" width="100" height="70" fill="#F5F5DC"/>
+  <rect x="100" y="80" width="100" height="70" stroke="#D4AF37" stroke-width="2"/>
+  
+  <!-- Building Roof - More detailed -->
+  <polygon points="95,80 105,70 195,70 205,80" fill="#D4AF37"/>
+  <polygon points="98,80 102,72 198,72 202,80" fill="#B8860B"/>
+  
+  <!-- Main Columns -->
+  <rect x="110" y="85" width="10" height="60" fill="#D4AF37"/>
+  <rect x="180" y="85" width="10" height="60" fill="#D4AF37"/>
+  
+  <!-- Secondary Columns -->
+  <rect x="120" y="85" width="8" height="60" fill="#D4AF37"/>
+  <rect x="172" y="85" width="8" height="60" fill="#D4AF37"/>
+  
+  <!-- Column Details -->
+  <rect x="108" y="83" width="14" height="4" fill="#B8860B"/>
+  <rect x="178" y="83" width="14" height="4" fill="#B8860B"/>
+  <rect x="118" y="83" width="12" height="4" fill="#B8860B"/>
+  <rect x="170" y="83" width="12" height="4" fill="#B8860B"/>
+  
+  <!-- Windows - First Row -->
+  <rect x="115" y="95" width="14" height="18" fill="#87CEEB"/>
+  <rect x="115" y="95" width="14" height="18" stroke="#4682B4" stroke-width="1"/>
+  <rect x="118" y="98" width="8" height="12" fill="#E0F6FF"/>
+  
+  <rect x="135" y="95" width="14" height="18" fill="#87CEEB"/>
+  <rect x="135" y="95" width="14" height="18" stroke="#4682B4" stroke-width="1"/>
+  <rect x="138" y="98" width="8" height="12" fill="#E0F6FF"/>
+  
+  <rect x="155" y="95" width="14" height="18" fill="#87CEEB"/>
+  <rect x="155" y="95" width="14" height="18" stroke="#4682B4" stroke-width="1"/>
+  <rect x="158" y="98" width="8" height="12" fill="#E0F6FF"/>
+  
+  <rect x="175" y="95" width="14" height="18" fill="#87CEEB"/>
+  <rect x="175" y="95" width="14" height="18" stroke="#4682B4" stroke-width="1"/>
+  <rect x="178" y="98" width="8" height="12" fill="#E0F6FF"/>
+  
+  <!-- Windows - Second Row -->
+  <rect x="115" y="118" width="14" height="18" fill="#87CEEB"/>
+  <rect x="115" y="118" width="14" height="18" stroke="#4682B4" stroke-width="1"/>
+  <rect x="118" y="121" width="8" height="12" fill="#E0F6FF"/>
+  
+  <rect x="135" y="118" width="14" height="18" fill="#87CEEB"/>
+  <rect x="135" y="118" width="14" height="18" stroke="#4682B4" stroke-width="1"/>
+  <rect x="138" y="121" width="8" height="12" fill="#E0F6FF"/>
+  
+  <rect x="155" y="118" width="14" height="18" fill="#87CEEB"/>
+  <rect x="155" y="118" width="14" height="18" stroke="#4682B4" stroke-width="1"/>
+  <rect x="158" y="121" width="8" height="12" fill="#E0F6FF"/>
+  
+  <rect x="175" y="118" width="14" height="18" fill="#87CEEB"/>
+  <rect x="175" y="118" width="14" height="18" stroke="#4682B4" stroke-width="1"/>
+  <rect x="178" y="121" width="8" height="12" fill="#E0F6FF"/>
+  
+  <!-- Door -->
+  <rect x="140" y="130" width="20" height="20" fill="#8B4513"/>
+  <rect x="140" y="130" width="20" height="20" stroke="#654321" stroke-width="1"/>
+  <rect x="143" y="133" width="14" height="14" fill="#A0522D"/>
+  
+  <!-- Door handle -->
+  <circle cx="155" cy="140" r="1.5" fill="#FFD700"/>
+  <circle cx="155" cy="140" r="0.5" fill="#B8860B"/>
+  
+  <!-- Building steps -->
+  <rect x="135" y="150" width="30" height="6" fill="#D4AF37"/>
+  <rect x="130" y="156" width="40" height="6" fill="#D4AF37"/>
+  <rect x="125" y="162" width="50" height="4" fill="#B8860B"/>
+  
+  <!-- Building details -->
+  <rect x="95" y="78" width="110" height="2" fill="#B8860B"/>
+  <rect x="98" y="76" width="104" height="2" fill="#D4AF37"/>
+</svg>
