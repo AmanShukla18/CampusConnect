@@ -1,0 +1,14 @@
+﻿D:\UniSpace\server\src\api\client.ts
+D:\UniSpace\server\src\models\News.ts
+D:\UniSpace\server\src\screens\EventsScreen.tsx
+D:\UniSpace\server\src\screens\LostFoundScreen.tsx
+D:\UniSpace\server\src\screens\NoticesScreen.tsx
+D:\UniSpace\server\src\screens\ResourcesScreen.tsx
+D:\UniSpace\server\src\screens\SettingsScreen.tsx
+D:\UniSpace\server\src\screens\StudyGroupsScreen.tsx
+D:\UniSpace\server\src\scripts\migrate.ts
+D:\UniSpace\server\src\services\newsService.ts
+D:\UniSpace\server\src\index.ts
+D:\UniSpace\server\src\list_users.ts
+D:\UniSpace\server\src\seed_data.ts
+D:\UniSpace\server\src\seed_notices.ts

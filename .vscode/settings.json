@@ -1,0 +1,12 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "javascript.suggestionActions.enabled": false,
+  "typescript.preferences.includePackageJsonAutoImports": "off",
+  "typescript.validate.enable": true,
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "node_modules"
+],
+"liveServer.settings.multiRootWorkspaceName": "CampusConnectCur"
+}

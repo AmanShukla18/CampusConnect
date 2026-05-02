@@ -1,0 +1,24 @@
+﻿src/components/ui/Input.tsx(89,22): error TS2769: No overload matches this call.
+  Overload 2 of 2, '(props: TextInputProps, context: any): TextInput', gave the following error.
+    Type '(e: NativeSyntheticEvent<TextInputFocusEventData>) => void' is not assignable to type '(e: FocusEvent) => void'.
+      Types of parameters 'e' and 'e' are incompatible.
+        Type 'FocusEvent' is not assignable to type 'NativeSyntheticEvent<TextInputFocusEventData>'.
+          Type 'TargetedEvent' is missing the following properties from type 'TextInputFocusEventData': text, eventCount
+  Overload 2 of 2, '(props: TextInputProps, context: any): TextInput', gave the following error.
+    Type '(e: NativeSyntheticEvent<TextInputFocusEventData>) => void' is not assignable to type '(e: BlurEvent) => void'.
+      Types of parameters 'e' and 'e' are incompatible.
+        Type 'BlurEvent' is not assignable to type 'NativeSyntheticEvent<TextInputFocusEventData>'.
+          Type 'TargetedEvent' is missing the following properties from type 'TextInputFocusEventData': text, eventCount
+src/components/ui/SkeletonLoader.tsx(60,21): error TS2322: Type 'string | number' is not assignable to type 'DimensionValue | undefined'.
+  Type 'string' is not assignable to type 'DimensionValue | undefined'.
+src/components/ui/SkeletonLoader.tsx(61,21): error TS2322: Type 'string | number' is not assignable to type 'DimensionValue | undefined'.
+  Type 'string' is not assignable to type 'DimensionValue | undefined'.
+src/components/ui/SkeletonLoader.tsx(66,21): error TS2322: Type 'string | number' is not assignable to type 'DimensionValue | undefined'.
+  Type 'string' is not assignable to type 'DimensionValue | undefined'.
+src/components/ui/SkeletonLoader.tsx(67,21): error TS2322: Type 'string | number' is not assignable to type 'DimensionValue | undefined'.
+  Type 'string' is not assignable to type 'DimensionValue | undefined'.
+src/components/ui/SkeletonLoader.tsx(73,21): error TS2322: Type 'string | number' is not assignable to type 'DimensionValue | undefined'.
+  Type 'string' is not assignable to type 'DimensionValue | undefined'.
+src/components/ui/SkeletonLoader.tsx(74,21): error TS2322: Type 'string | number' is not assignable to type 'DimensionValue | undefined'.
+  Type 'string' is not assignable to type 'DimensionValue | undefined'.
+src/screens/SettingsScreen.tsx(66,37): error TS2339: Property 'documentDirectory' does not exist on type 'typeof import("D:/UniSpace/node_modules/expo-file-system/build/index")'.
