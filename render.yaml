@@ -35,10 +35,11 @@ services:
       - key: NEWS_MAX_LIVE_ARTICLES
         value: 100
 
-  - type: static_site
+  - type: web
+      runtime: static
     name: campusconnect-frontend
     buildCommand: npm install && npm run build:web
-    publishDir: dist
+    staticPublishPath: dist
     envVars:
       - key: EXPO_PUBLIC_API_URL
         value: https://campusconnect-backend.onrender.com/api
