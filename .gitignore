@@ -41,3 +41,13 @@ yarn-error.*
 /android
 
 .env
+server/.env
+
+# Debug output files
+*.txt
+ts.txt
+ts_out.txt
+tsc-errors.txt
+server_files.txt
+src_files.txt
+ip_info.txt

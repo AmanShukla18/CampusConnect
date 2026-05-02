@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: campusconnect-backend
+    runtime: node
+    rootDir: server
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      - key: MONGO_URI
+        sync: false
+      - key: EXPO_PUBLIC_CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: EXPO_PUBLIC_CLOUDINARY_API_KEY
+        sync: false
+      - key: EXPO_PUBLIC_CLOUDINARY_API_SECRET
+        sync: false
+      - key: EXPO_PUBLIC_CLOUDINARY_FOLDER
+        sync: false
+      - key: EXPO_PUBLIC_CLOUDINARY_UPLOAD_PRESET
+        sync: false
+      - key: NEWS_REFRESH_INTERVAL_MS
+        value: 60000
+      - key: NEWS_ARCHIVE_SAVE_INTERVAL_MS
+        value: 300000
+      - key: NEWS_CLEANUP_INTERVAL_MS
+        value: 3600000
+      - key: NEWS_LIVE_WINDOW_HOURS
+        value: 24
+      - key: NEWS_RECENT_WINDOW_DAYS
+        value: 7
+      - key: NEWS_WEEKLY_WINDOW_DAYS
+        value: 30
+      - key: NEWS_MAX_LIVE_ARTICLES
+        value: 100
