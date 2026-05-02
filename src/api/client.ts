@@ -8,6 +8,10 @@ const localhost = debuggerHost?.split(':')[0] || 'localhost';
 // Use environment variable for production, fallback to localhost for development
 export const API_BASE_URL =
   process.env.EXPO_PUBLIC_API_URL ||
+  `http://${localhost}:4000/api`;
+
+export const SOCKET_URL = 
+  process.env.EXPO_PUBLIC_SOCKET_URL || 
   `http://${localhost}:4000`;
 
 export const client = axios.create({

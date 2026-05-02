@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { io, Socket } from 'socket.io-client';
 import { Alert } from 'react-native';
-import { API_BASE_URL } from '../api/client';
+import { SOCKET_URL } from '../api/client';
 
 interface SocketContextType {
     socket: Socket | null;
@@ -20,7 +20,7 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     const [isConnected, setIsConnected] = useState(false);
 
     useEffect(() => {
-        const socketInstance = io(API_BASE_URL, {
+        const socketInstance = io(SOCKET_URL, {
             transports: ['websocket'],
             reconnection: true,
         });

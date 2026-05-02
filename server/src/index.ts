@@ -19,7 +19,7 @@ const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:8081',
   'http://localhost:8082',
-  'https://campusconnect-web.onrender.com',
+  'https://campusconnect-frontend.onrender.com',
   'https://campusconnect-web.onrender.com',
 ];
 
