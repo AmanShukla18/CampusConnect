@@ -29,7 +29,6 @@ services:
   - type: web
     name: campusconnect-frontend
     runtime: static
-    region: singapore
     plan: free
     rootDir: .
     buildCommand: npm install && npx expo export --platform web
