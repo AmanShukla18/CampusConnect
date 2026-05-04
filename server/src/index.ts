@@ -14,21 +14,34 @@ import { Server } from 'socket.io';
 dotenv.config();
 
 const app = express();
-const allowedOrigins = [
+const allowedOriginsList: (string | RegExp)[] = [
   'http://localhost:19006',
   'http://localhost:3000',
   'http://localhost:8081',
   'http://localhost:8082',
+  // Render deployment URLs
   'https://campusconnect-frontend.onrender.com',
   'https://campusconnect-web.onrender.com',
+  // Allow any *.onrender.com subdomain for flexibility during initial deploy
+  /https:\/\/.*\.onrender\.com$/,
 ];
 
-app.use(
-  cors({
-    origin: allowedOrigins,
-    credentials: true,
-  })
-);
+const corsOriginFn = (
+  origin: string | undefined,
+  callback: (err: Error | null, allow?: boolean) => void
+) => {
+  // Allow requests with no origin (e.g. mobile apps, curl)
+  if (!origin) return callback(null, true);
+  const allowed = allowedOriginsList.some((o) =>
+    typeof o === 'string' ? o === origin : o.test(origin)
+  );
+  if (allowed) return callback(null, true);
+  callback(new Error(`CORS: origin ${origin} not allowed`));
+};
+
+const corsOptions = { origin: corsOriginFn, credentials: true };
+
+app.use(cors(corsOptions));
 app.use(express.json({ limit: '10mb' }));
 app.use(morgan('dev'));
 
@@ -38,8 +51,9 @@ const server = http.createServer(app);
 // Initialize Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: allowedOrigins,
+    origin: corsOriginFn,
     methods: ['GET', 'POST', 'DELETE', 'PUT', 'PATCH'],
+    credentials: true,
   },
 });
 
