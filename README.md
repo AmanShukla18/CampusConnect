@@ -13,6 +13,11 @@
 ![MongoDB](https://img.shields.io/badge/mongodb-mongoose%208.19.1-green)
 ![License](https://img.shields.io/badge/license-ISC-yellow)
 
+## 🚀 Live Demo
+
+- **Frontend Application (Live Web App):** [https://campusconnect-frontend-jfjx.onrender.com](https://campusconnect-frontend-jfjx.onrender.com)
+- **Backend API Base URL:** [https://campusconnect-backend-n9bz.onrender.com](https://campusconnect-backend-n9bz.onrender.com)
+
 ---
 
 ## 📋 Table of Contents
